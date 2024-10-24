@@ -3,7 +3,7 @@
 /* ******************* */
 
 @media (max-width: 1200px) {
-  body { background-color: lightgray ;}
+  body { background-color: lightgray; }
 }
 
 @media (max-width: 450px) {
