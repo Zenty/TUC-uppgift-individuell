@@ -12,6 +12,12 @@ body {
   background-color: var(--bg-main-color);
 }
 
+[class|="fa"] {
+  color: var(--text-color-on-dark);
+  font-size: 25px;
+  margin-right: 10px;
+}
+
 /* ************ */
 /*    Header    */
 /* ************ */
