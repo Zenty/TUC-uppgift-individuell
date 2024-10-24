@@ -1,0 +1,18 @@
+:root {
+  /* General Colors */
+  --bg-nav-color: #12232C;
+  --bg-main-color: rgb(242, 242, 242);
+
+  --text-color-on-dark: #ffffff;
+  --text-color-on-light: #000000;
+
+  /* Specific Colors */
+  --primary-html-color: rgb(228, 148, 26);
+  --secondary-html-color: rgb(113, 85, 57);
+
+  --primary-css-color: rgb(39, 175, 60);
+  --secondary-css-color: rgb(57, 113, 62);
+  
+  --primary-js-color: rgb(44, 122, 181);
+  --secondary-js-color: rgb(57, 89, 113);
+}
