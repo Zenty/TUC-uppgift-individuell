@@ -12,11 +12,11 @@ body {
   background-color: var(--bg-main-color);
 }
 
-[class|="fa"] {
+i.fas, i.far, i.fal {
   color: var(--text-color-on-dark);
-  font-size: 25px;
-  margin-right: 10px;
+  font-size: 30px;
 }
+
 
 /* ************ */
 /*    Header    */
@@ -40,18 +40,28 @@ header figure#logotyp {
 }
 
 /* Navigation */
+#hamburger, #hamburgerexit {
+  display: none;
+}
+
 header nav ul.menu li {
   list-style: none;
   text-align: center;
 }
 
-/* Sub Navigation */
-header nav ul.menu li:hover ul.sub-menu {
-  display: block;
+header .toggle_menu {
+  display: block !important;
 }
 
+/* Sub Navigation */
 header nav ul.menu ul.sub-menu {
   display: none;
+}
+
+
+header nav #submenu-arrow {
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 /* ********** */

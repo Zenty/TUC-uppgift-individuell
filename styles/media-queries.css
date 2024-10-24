@@ -4,12 +4,20 @@
 
 @media (max-width: 1200px) {
   body { background-color: lightgray; }
+  /* Header */
+  /* Navigation */
+  /* Main */
+  /* Footer */
 }
 
 @media (max-width: 450px) {
   body { background-color: darkgray; }
   /* Header */
-  header { width: 100%; }
+  header { width: 100%; flex-direction: row; justify-content: space-between; min-height: auto; padding: 40px; }
+  header figure#logotyp { margin: 0; }
+  /* Navigation */
+  #hamburger { display: block; }
+  header nav { display: none; }
   /* Main */
   /* Footer */
 }
