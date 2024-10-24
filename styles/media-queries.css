@@ -1,0 +1,15 @@
+/* ******************* */
+/*    Media Queries    */
+/* ******************* */
+
+@media (max-width: 1200px) {
+  body { background-color: lightgray ;}
+}
+
+@media (max-width: 450px) {
+  body { background-color: darkgray; }
+  /* Header */
+  header { width: 100%; }
+  /* Main */
+  /* Footer */
+}

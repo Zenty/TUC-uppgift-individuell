@@ -1,0 +1,57 @@
+/* ******************** */
+/*    General Styles    */
+/* ******************** */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-main-color);
+}
+
+/* ************ */
+/*    Header    */
+/* ************ */
+
+header {
+  background-color: var(--bg-nav-color);
+  width: 300px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header figure#logotyp {
+  width: 50px;
+  height: 50px;
+  border: 12px dashed white;
+  margin: 40px;
+  box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 1);
+}
+
+/* Navigation */
+header nav ul.menu li {
+  list-style: none;
+  text-align: center;
+}
+
+/* Sub Navigation */
+header nav ul.menu li:hover ul.sub-menu {
+  display: block;
+}
+
+header nav ul.menu ul.sub-menu {
+  display: none;
+}
+
+/* ********** */
+/*    Main    */
+/* ********** */
+
+/* ************ */
+/*    Footer    */
+/* ************ */

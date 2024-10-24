@@ -1,10 +1,19 @@
+/* ******************** */
+/*    CSS Properties    */
+/* ******************** */
+
 :root {
   /* General Colors */
-  --bg-nav-color: #12232C;
   --bg-main-color: rgb(242, 242, 242);
+  --bg-nav-color: #12232C;
 
   --text-color-on-dark: #ffffff;
   --text-color-on-light: #000000;
+
+  --menu-link-color: rgba(255, 255, 255, 1);
+  --menu-link-hover-color: rgba(255, 255, 255, 0.85);
+  --menu-sub-link-color: rgba(248, 248, 248, 1);
+  --menu-sub-link-hover-color: rgba(248, 248, 248, 0.85);
 
   /* Specific Colors */
   --primary-html-color: rgb(228, 148, 26);
