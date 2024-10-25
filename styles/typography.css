@@ -5,10 +5,10 @@
 body { color: var(--text-color-on-light); font-family: 'Open Sans', sans-serif; }
 /* Header */
 header nav #hamburger { text-align: center; }
-header nav ul.menu li a { color: var(--menu-link-color); text-decoration: none; display: block; font-size: 22px; padding: 10px; }
+header nav ul.menu li a { color: var(--menu-link-color); text-decoration: none; display: block; font-size: 18px; padding: 10px; }
 header nav ul.menu li a.active { color: var(--primary-color); }
 header nav ul.menu li a:hover { text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); }
 header nav ul.menu ul.sub-menu li a { color: var(--menu-sub-link-color); font-size: 16px; padding: 5px; }
 header nav ul.menu ul.sub-menu li a:hover { color: var(--menu-sub-link-hover-color); text-decoration: underline; text-shadow: none; }
-header nav ul.menu li a i#submenu-arrow { font-size: 20px; margin-left: 10px; }
+header nav ul.menu li a i#submenu-arrow { font-size: 16px; margin-left: 10px; }
 header nav ul.menu li a.active i#submenu-arrow { color: var(--primary-color); }
