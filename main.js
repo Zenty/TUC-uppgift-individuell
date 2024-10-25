@@ -1,8 +1,11 @@
 // Variables
+var body = document.getElementsByTagName("body")[0];
 var header = document.getElementsByTagName("header")[0];
 var logotype = document.getElementById("logotype");
 var nav = document.getElementsByClassName("menu")[0];
 var subnav = document.getElementsByClassName("sub-menu")[0];
+var main = document.getElementsByTagName("main")[0];
+var footer = document.getElementsByTagName("footer")[0];
 
 var hamburger = document.getElementById("hamburger");
 var hamburgerexit = document.getElementById("hamburgerexit");
@@ -39,8 +42,11 @@ arrow_left.addEventListener("click", function() {
   arrow_left.style.animation = "toleft 0.5s ease-in-out";
   arrow_right.style.animation = "toleft 0.5s ease-in-out";
 
+  body.style.gridTemplateColumns = "[col-start] 30px [main] auto [col-end]";
+
   header.classList.toggle("toggle-header");
   header.style.transition = "width 0.5s ease-in-out";
+
 });
 
 arrow_right.addEventListener("click", function() {
@@ -53,8 +59,11 @@ arrow_right.addEventListener("click", function() {
   arrow_left.style.animation = "toright 0.5s ease-in-out";
   arrow_right.style.animation = "toright 0.5s ease-in-out";
 
+  body.style.gridTemplateColumns = "[col-start] 300px [main] auto [col-end]";
+
   header.classList.toggle("toggle-header");
   header.style.transition = "width 0.5s ease-in-out";
+
 });
 
 // Toggle Navigation Sub Menu

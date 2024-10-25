@@ -2,20 +2,22 @@
 /*    Media Queries    */
 /* ******************* */
 
+/* Desktop */
 @media (min-width: 1200px) {
+  body { grid-template-columns: [col-start] 300px [main] auto [col-end] !important; }
   header nav { display: block !important; }
   header nav ul.menu { display: block !important; }
   #hamburger, #hamburgerexit { display: none !important; }
   #arrow-left, #arrow-right { display: none !important; }
 }
 
+/* Medium Sized Devices */
 @media (max-width: 1200px) and (min-width: 480px) {
   /* Header */
   header nav { display: block !important; }
   header nav ul.menu { display: block !important; }
   header.toggle-header { width: 30px; }
   header.toggle-header #logotype, header.toggle-header nav ul.menu { display: none !important; }
-  /*header::after { height: 40px; width: 40px; background-color: var(--bg-nav-color); content: ""; position: absolute; top: 45px; left: 300px; color: white; border-top-right-radius: 10px; border-bottom-right-radius: 10px; } */
   /* Navigation */
   #arrow-left, #arrow-right { background-color: var(--bg-nav-color); padding: 10px; padding-right: 10px; position: absolute; top: 45px; left: 300px; color: white; border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
   #arrow-left { display: block; padding-right: 15px; }
@@ -25,9 +27,12 @@
   /* Footer */
 }
 
+/* Phones */
 @media (max-width: 480px) {
+  body { grid-template-columns: [col-start] auto [col-end] !important; grid-template-rows: [row-start] auto [main] auto [footer] auto [row-end] !important; }
   /* Header */
   header { width: 100%; flex-direction: row; justify-content: space-between; flex-wrap: wrap; min-height: auto; padding: 40px; transition: none; }
+  header { grid-column: col-start / span col-end; grid-row: row-start / span main; }
   header::after { display: none; }
   header figure#logotype { margin: 0; margin-left: 20px; }
   /* Navigation */
@@ -36,5 +41,7 @@
   #arrow-left, #arrow-right { display: none !important;  animation: none; }
   header nav { display: none; width: 100%; margin-top: 40px; }
   /* Main */
+  main { grid-column: col-start / span col-end; grid-row: main / span footer; }
   /* Footer */
+  footer { grid-column: col-start / span col-end; grid-row: footer / span row-end; }
 }
