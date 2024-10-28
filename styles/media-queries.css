@@ -26,6 +26,9 @@
   #arrow-right { padding-left: 15px; }
   #hamburger, #hamburgerexit { display: none !important; }
   /* Main */
+  main#index section.banner { background-position-x: -300px;}
+  main#index section.banner h1 { font-size: 50px; line-height: 54px; }
+  main#index section.banner h2 { font-size: 26px; }
   /* Footer */
   footer { flex-wrap: wrap; text-align: left; }
   footer section { order: 2; }
@@ -49,6 +52,10 @@
   header nav { display: none; width: 100%; margin-top: 50px; padding-bottom: 0; }
   /* Main */
   main { grid-column: col-start / span col-end; grid-row: main / span footer; }
+  main#index section.banner { background-position-x: -500px;}
+  main#index section.banner h1 { font-size: 36px; line-height: 40px;}
+  main#index section.banner h2 { font-size: 22px; }
+  main#index section.banner .banner-wrapper { padding: 25px; }
   /* Footer */
   footer { grid-column: col-start / span col-end; grid-row: footer / span row-end; flex-wrap: wrap; }
   footer section { order: 2; }
