@@ -12,3 +12,13 @@ header nav ul.menu ul.sub-menu li a { color: var(--menu-sub-link-color); font-si
 header nav ul.menu ul.sub-menu li a:hover { color: var(--menu-sub-link-hover-color); text-decoration: underline; text-shadow: none; }
 header nav ul.menu li a i#submenu-arrow { font-size: 16px; margin-left: 10px; }
 header nav ul.menu li a.active i#submenu-arrow { color: var(--primary-color); }
+
+/* Footer */
+footer section h3 {font-family: 'Open Sans', sans-serif; color: var(--footer-heading-color); font-size: 15px; font-weight: bold; letter-spacing: 1.5px; text-align: left; padding-bottom: 10px; }
+footer nav h3 { font-family: 'Open Sans', sans-serif; color: var(--footer-heading-color); font-size: 15px; font-weight: bold; letter-spacing: 1.5px; text-align: right; padding-bottom: 10px; }
+footer section p { font-size: 14px; color: var(--footer-text-color); }
+footer section p.copyright { font-size: 12px; color: var(--primary-color); }
+footer nav ul { text-align: right; }
+footer nav ul li { list-style: none; }
+footer nav ul li a { color: var(--footer-menu-link-color); font-size: 14px; text-decoration: none; padding: 5px 0px 5px 10px; display: inline-block; }
+footer nav ul li a:hover { color: var(--footer-menu-link-hover-color); text-decoration: underline; }

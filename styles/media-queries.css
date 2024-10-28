@@ -4,7 +4,7 @@
 
 /* Desktop */
 @media (min-width: 1200px) {
-  body { grid-template-columns: [col-start] 300px [main] auto [col-end] !important; grid-template-rows: [row-start] auto [footer] 200px [row-end] !important; }
+  body { grid-template-columns: [col-start] 300px [main] auto [col-end] !important; grid-template-rows: [row-start] auto [footer] 240px [row-end] !important; }
   header { transition: width 0s ease-in-out !important; }
   header nav { display: block !important; }
   header nav ul.menu { display: block !important; }
@@ -13,8 +13,8 @@
 }
 
 /* Medium Sized Devices */
-@media (max-width: 1200px) and (min-width: 480px) {
-  body { grid-template-rows: [row-start] auto [footer] 200px [row-end] !important; }
+@media (max-width: 1200px) and (min-width: 600px) {
+  body { grid-template-rows: [row-start] auto [footer] auto [row-end] !important; }
   /* Header */
   header nav { display: block !important; }
   header nav ul.menu { display: block !important; }
@@ -27,10 +27,15 @@
   #hamburger, #hamburgerexit { display: none !important; }
   /* Main */
   /* Footer */
+  footer { flex-wrap: wrap; text-align: left; }
+  footer section { order: 2; }
+  footer aside { margin-bottom: 30px; order: 1; }
+  footer nav ul, footer nav h3 { text-align: left; }
+  footer nav ul li a { padding-left: 0px; }
 }
 
 /* Phones */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   body { grid-template-columns: [col-start] auto [col-end] !important; grid-template-rows: [row-start] 142px [main] auto [footer] auto [row-end]; }
   /* Header */
   header { width: 100%; flex-direction: row; justify-content: space-between; flex-wrap: wrap; min-height: auto; padding: 40px; transition: width 0s ease-in-out !important; }
@@ -45,5 +50,9 @@
   /* Main */
   main { grid-column: col-start / span col-end; grid-row: main / span footer; }
   /* Footer */
-  footer { grid-column: col-start / span col-end; grid-row: footer / span row-end; }
+  footer { grid-column: col-start / span col-end; grid-row: footer / span row-end; flex-wrap: wrap; }
+  footer section { order: 2; }
+  footer aside { margin-bottom: 30px; order: 1; }
+  footer nav ul, footer nav h3 { text-align: left; }
+  footer nav ul li a { padding-left: 0px; }
 }
