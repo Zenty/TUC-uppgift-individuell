@@ -2,6 +2,14 @@
 /*    Media Queries    */
 /* ******************* */
 
+@media (max-width: 1850px) {
+  main#index section.main-content section .course_item { width: 47%; }
+}
+
+@media (max-width: 1350px) {
+  main#index section.main-content section .course_item { width: 100%; }
+}
+
 /* Desktop */
 @media (min-width: 1200px) {
   body { grid-template-columns: [col-start] 300px [main] auto [col-end] !important; grid-template-rows: [row-start] auto [footer] 240px [row-end] !important; }
@@ -29,6 +37,8 @@
   main#index section.banner { background-position-x: -300px;}
   main#index section.banner h1 { font-size: 50px; line-height: 54px; }
   main#index section.banner h2 { font-size: 26px; }
+  main#index section.main-content h2 { font-size: 32px; }
+  main#index section.main-content a#schedule-button { font-size: 18px; }
   /* Footer */
   footer { flex-wrap: wrap; text-align: left; }
   footer section { order: 2; }
@@ -52,10 +62,13 @@
   header nav { display: none; width: 100%; margin-top: 50px; padding-bottom: 0; }
   /* Main */
   main { grid-column: col-start / span col-end; grid-row: main / span footer; }
+  main#index section section { margin-top: 25px; }
   main#index section.banner { background-position-x: -500px;}
   main#index section.banner h1 { font-size: 36px; line-height: 40px;}
   main#index section.banner h2 { font-size: 22px; }
   main#index section.banner .banner-wrapper { padding: 25px; }
+  main#index section.main-content h2 { font-size: 32px; }
+  main#index section.main-content a#schedule-button { font-size: 18px; }
   /* Footer */
   footer { grid-column: col-start / span col-end; grid-row: footer / span row-end; flex-wrap: wrap; }
   footer section { order: 2; }

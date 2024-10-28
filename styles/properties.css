@@ -8,7 +8,7 @@
   --bg-nav-color: #12232C;
   --bg-footer-color: rgba(18, 35, 44, 0.8);
 
-  --main-banner-bg-color: rgba(31, 207, 230, 0.606);
+  --main-banner-bg-color: rgba(31, 207, 230, 0.6);
   --main-main-heading-color: rgb(255, 255, 255);
 
   --footer-heading-color: rgb(255, 255, 255);
@@ -27,12 +27,12 @@
   --primary-color: rgb(111, 200, 238);
 
   /* Specific Colors */
-  --primary-html-color: rgb(228, 148, 26);
-  --secondary-html-color: rgb(113, 85, 57);
+  --primary-html-color: 228, 148, 26;
+  --secondary-html-color:113, 85, 57;
 
-  --primary-css-color: rgb(39, 175, 60);
-  --secondary-css-color: rgb(57, 113, 62);
+  --primary-css-color: 39, 175, 60;
+  --secondary-css-color: 57, 113, 62;
   
-  --primary-js-color: rgb(44, 122, 181);
-  --secondary-js-color: rgb(57, 89, 113);
+  --primary-js-color: 44, 122, 181;
+  --secondary-js-color: 57, 89, 113;
 }

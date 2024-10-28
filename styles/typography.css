@@ -14,10 +14,24 @@ header nav ul.menu li a i#submenu-arrow { font-size: 16px; margin-left: 10px; }
 header nav ul.menu li a.active i#submenu-arrow { color: var(--primary-color); }
 
 /* Main */
-main section.banner h1 { font-size: 60px; color: var(--main-main-heading-color); line-height: 65px; word-break: break-word; }
-main section.banner h2 { font-size: 32px; color: var(--main-main-heading-color); padding-top: 15px;}
-main section.banner #banner-button { background-color: var(--primary-color); display: inline-block; font-size: 22px; margin-top: 35px; padding: 20px 40px; color: white; text-decoration: none; box-shadow: 0px 0px 10px rgba(0,0,0,0.2) }
-main section.banner #banner-button:hover { background-color: rgba(255,255,255, 0.85); box-shadow: 0px 0px 15px 2px white; color: var(--primary-color); }
+main#index section.banner h1 { font-size: 60px; color: var(--main-main-heading-color); line-height: 65px; word-break: break-word; }
+main#index section.banner h2 { font-size: 32px; color: var(--main-main-heading-color); padding-top: 15px;}
+main#index section.banner #banner-button { background-color: var(--primary-color); display: inline-block; font-size: 22px; margin-top: 35px; padding: 20px 40px; color: white; text-decoration: none; box-shadow: 0px 0px 10px rgba(0,0,0,0.2) }
+main#index section.banner #banner-button:hover { background-color: rgba(255,255,255, 0.85); box-shadow: 0px 0px 15px 2px white; color: var(--primary-color); }
+
+main#index section.main-content h2 { font-size: 32px; text-align: center;}
+main#index section.main-content a#schedule-button { display: block; font-size: 22px; text-align: center; padding-bottom: 30px; color: var(--primary-color); text-decoration: none; }
+main#index section.main-content a#schedule-button:hover { text-decoration: underline; }
+
+main#index section.main-content section h3 { display: block; width: 100%; font-size: 22px; margin-bottom: 10px; }
+main#index section.main-content section h3#html-header { color: rgb(var(--primary-html-color)); }
+main#index section.main-content section h3#css-header { color: rgb(var(--primary-css-color)); }
+main#index section.main-content section h3#js-header { color: rgb(var(--primary-js-color)); }
+
+main#index section.main-content section a { color: white; text-decoration: none; }
+main#index section.main-content section a h4 { font-size: 36px; word-break: break-word; }
+main#index section.main-content section a span { font-size: 16px; text-align: right; padding-right: 15px; padding-top: 15px;}
+main#index section.main-content section a:hover span { font-size: 16px; text-align: right; padding-right: 15px; text-decoration: underline; }
 
 /* Footer */
 footer section h3 {font-family: 'Open Sans', sans-serif; color: var(--footer-heading-color); font-size: 15px; font-weight: bold; letter-spacing: 1.5px; text-align: left; padding-bottom: 10px; }
