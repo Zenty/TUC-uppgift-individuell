@@ -58,13 +58,13 @@ arrow_right.addEventListener("click", function() {
   arrow_left.style.left = "300px";
   arrow_right.style.left = "300px";
 
-  arrow_left.style.animation = "toright 0.5s ease-in-out";
-  arrow_right.style.animation = "toright 0.5s ease-in-out";
+  arrow_left.style.animation = "toright 0s ease-in-out";
+  arrow_right.style.animation = "toright 0s ease-in-out";
 
   body.style.gridTemplateColumns = "[col-start] 300px [main] auto [col-end]";
 
   header.classList.toggle("toggle-header");
-  header.style.transition = "width 0.5s ease-in-out";
+  header.style.transition = "width 0s ease-in-out";
 
 });
 
