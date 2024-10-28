@@ -82,10 +82,27 @@ header nav ul.menu ul.sub-menu {
 main {
   background-color: var(--bg-main-color);
   min-height: 50vh;
-  padding: 50px;
   grid-column: main / span col-end;
   grid-row: row-start / span footer;
   display: flex;
+  flex-direction: column;
+}
+
+main > section {
+  padding: 50px;
+}
+
+main#index section {
+  width: 100%;
+}
+
+main#index section section {
+  margin-top: 50px;
+}
+
+main#index section.banner {
+  background-color: gray;
+  min-height: 400px;
 }
 
 /* ************ */
