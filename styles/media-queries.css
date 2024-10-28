@@ -29,7 +29,7 @@
 
 /* Phones */
 @media (max-width: 480px) {
-  body { grid-template-columns: [col-start] auto [col-end] !important; grid-template-rows: [row-start] auto [main] auto [footer] auto [row-end] !important; }
+  body { grid-template-columns: [col-start] auto [col-end] !important; grid-template-rows: [row-start] 142px [main] auto [footer] auto [row-end]; }
   /* Header */
   header { width: 100%; flex-direction: row; justify-content: space-between; flex-wrap: wrap; min-height: auto; padding: 40px; transition: none; }
   header { grid-column: col-start / span col-end; grid-row: row-start / span main; }
@@ -39,7 +39,7 @@
   #hamburger { display: block; }
   #hamburger, #hamburgerexit { margin-right: 20px; }
   #arrow-left, #arrow-right { display: none !important;  animation: none; }
-  header nav { display: none; width: 100%; margin-top: 40px; }
+  header nav { display: none; width: 100%; margin-top: 50px; padding-bottom: 0; }
   /* Main */
   main { grid-column: col-start / span col-end; grid-row: main / span footer; }
   /* Footer */

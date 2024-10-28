@@ -22,6 +22,7 @@ hamburger.addEventListener("click", function(){
   hamburgerexit.style.display = "block";
   nav.style.display = "block";
   nav.parentElement.style.display = "block";
+  body.style.gridTemplateRows = "[row-start] auto [main] auto [footer] auto [row-end]";
 });
 
 hamburgerexit.addEventListener("click", function(){
@@ -29,6 +30,7 @@ hamburgerexit.addEventListener("click", function(){
   hamburgerexit.style.display = "none";
   nav.style.display = "none";
   nav.parentElement.style.display = "none";
+  body.style.gridTemplateRows = "[row-start] 142px [main] auto [footer] auto [row-end]";
 });
 
 // Toggle Arrow Menu
