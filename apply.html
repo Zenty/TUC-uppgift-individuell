@@ -52,8 +52,33 @@
     </nav>
   </header>
   <!-- Main Content --> 
-  <main>
-
+  <main id="apply">
+    <section>
+      <h1>Apply To a Course!</h1>
+      <form action="/apply.html" id="apply_form">
+        <label for="application_name"> Your name:</label>
+        <input type="text" id="application_name" name="application_name" placeholder="Pontus" required>
+        <label for="application_email"> Your email:</label>
+        <input type="email" id="application_email" name="application_email" placeholder="myName@email.com" required>
+        <label for="application_phone_num"> Your phone:</label>
+        <input type="tel" id="application_phone_num" name="application_phone_num" pattern="^([+]46)\s*(7[0236])\s*(\d{4})\s*(\d{3})$" placeholder="+46 7..." required>
+        <label for="application_select_course"> Select Course:</label>
+        <select id="application_select_course" name="application_select_course" required>
+          <option value="HTML Course 1">HTML Course 1</option>
+          <option value="HTML Course 2">HTML Course 2</option>
+          <option value="HTML Course 3">HTML Course 3</option>
+          <option value="CSS Course 1">CSS Course 1</option>
+          <option value="CSS Course 2">CSS Course 2</option>
+          <option value="CSS Course 3">CSS Course 3</option>
+          <option value="JavaScript Course 1">JavaScript Course 1</option>
+          <option value="JavaScript Course 2">JavaScript Course 2</option>
+          <option value="JavaScript Course 3">JavaScript Course 3</option>
+        </select>
+        <label for="application_comments"> Extra comments:</label>
+        <textarea type="tel" id="application_comments" name="application_commentsm" rows="10" placeholder="Comment.."></textarea>
+        <input type="submit" id="application_submit" value="APPLY">
+      </form>
+    </section>
   </main>
   <!-- Footer --> 
   <footer>

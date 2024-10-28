@@ -92,6 +92,7 @@ main > section {
   padding: 50px;
 }
 
+/* Index.html */
 main#index section {
   width: 100%;
   display: flex;
@@ -160,6 +161,74 @@ main#index section.main-content section.css_courses a:hover { box-shadow: 0px 0p
 main#index section.main-content section.js_courses a { background-image: url("/images/frontend-course-image.jpeg"); background-size: cover; background-position-y: -30px; border: 2px solid rgba(var(--primary-js-color), 1); border-radius: 15px; border-top-left-radius: 0px; }
 main#index section.main-content section.js_courses div { background-color: rgba(var(--primary-js-color), 0.5); border-radius: 15px; border-top-left-radius: 0px; }
 main#index section.main-content section.js_courses a:hover { box-shadow: 0px 0px 15px 5px rgba(var(--primary-js-color), 1); }
+
+/* Index.html */
+main#apply section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main#apply section form {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+main#apply section form input {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 2px;
+}
+
+main#apply section form input:focus-visible {
+  outline-color: var(--primary-color);
+}
+
+
+main#apply section form select {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 2px;
+}
+
+main#apply section form select:focus-visible {
+  outline-color: var(--primary-color);
+}
+
+main#apply section form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  resize: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 2px;
+}
+
+main#apply section form textarea:focus-visible {
+  outline-color: var(--primary-color);
+}
+
+main#apply section form [type|="submit"] {
+  background-color: var(--primary-color);
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+main#apply section form [type|="submit"]:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
 
 /* ************ */
 /*    Footer    */
