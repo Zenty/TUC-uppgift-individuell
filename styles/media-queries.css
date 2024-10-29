@@ -2,6 +2,7 @@
 /*    Media Queries    */
 /* ******************* */
 
+/* Some specific cases */
 @media (max-width: 1850px) {
   main#index section.main-content section .course_item { width: 47%; }
 }
@@ -76,7 +77,7 @@
   main#index section.banner .banner-wrapper { padding: 25px; }
   main#index section.main-content h2 { font-size: 32px; }
   main#index section.main-content a#schedule-button { font-size: 18px; }
-  /* Apply.html */
+  /* Apply.html & Contact.html */
   main#apply section, main#contact section { padding: 25px; }
   main#apply section h1, main#contact section h1 { font-size: 34px; line-height: 40px; }
   main#apply section form, main#contact section form { width: 100%; margin-top: 25px; }

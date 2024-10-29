@@ -4,17 +4,12 @@
 
 :root {
   /* General Colors */
-  --bg-main-color: rgb(242, 242, 242);--footer-menu-link-color: rgba(36, 51, 58, 1);
-  --bg-nav-color: #12232C;
+  --bg-main-color: rgb(242, 242, 242);
+  --bg-nav-color: rgb(18, 35, 44);
   --bg-footer-color: rgba(18, 35, 44, 0.8);
 
   --main-banner-bg-color: rgba(31, 207, 230, 0.6);
   --main-main-heading-color: rgb(255, 255, 255);
-
-  --footer-heading-color: rgb(255, 255, 255);
-  --footer-text-color: rgb(193, 201, 203);
-  --footer-menu-link-color: rgb(193, 201, 203);
-  --footer-menu-link-hover-color: rgba(193, 201, 203, 0.85);
 
   --text-color-on-dark: #ffffff;
   --text-color-on-light: #000000;
@@ -24,11 +19,17 @@
   --menu-sub-link-color: rgba(248, 248, 248, 1);
   --menu-sub-link-hover-color: rgba(248, 248, 248, 0.85);
 
-  --primary-color: rgb(111, 200, 238);
+  --footer-heading-color: rgb(255, 255, 255);
+  --footer-text-color: rgb(193, 201, 203);
+  --footer-menu-link-color: rgb(193, 201, 203);
+  --footer-menu-link-hover-color: rgba(193, 201, 203, 0.85);
 
   /* Specific Colors */
+  --primary-color: rgb(111, 200, 238);
+  --primary-color-rgb: 111, 200, 238;
+
   --primary-html-color: 228, 148, 26;
-  --secondary-html-color:113, 85, 57;
+  --secondary-html-color: 113, 85, 57;
 
   --primary-css-color: 39, 175, 60;
   --secondary-css-color: 57, 113, 62;
