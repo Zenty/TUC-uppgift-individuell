@@ -42,10 +42,11 @@
   main#index section.main-content h2 { font-size: 32px; }
   main#index section.main-content a#schedule-button { font-size: 18px; }
   /* Apply.html & Contact.html */
-  main#apply section h1, main#contact section h1 { font-size: 46px; line-height: 50px; }
-  main#apply section form, main#contact section form { width: 100%; max-width: 500px; }
-  main#apply section form input, main#contact section form input { width: 50%; min-width: 170px; }
-  main#apply section form select, main#contact section form select { width: 50%; min-width: 170px; }
+  main#apply section h1, main#contact section.contact-section1 .contact-wrapper h1 { font-size: 46px; line-height: 50px; }
+  main#apply section form, main#contact section.contact-section1 .contact-wrapper form { width: 100%; max-width: 500px; }
+  main#apply section form input, main#contact section.contact-section1 .contact-wrapper form input { width: 48%; min-width: 170px; }
+  main#apply section form select, main#contact section.contact-section1 .contact-wrapper form select { width: 48%; min-width: 170px; }
+  main#contact section.contact-section2 section { width: 100%; }
   /* Footer */
   footer { flex-wrap: wrap; text-align: left; }
   footer section { order: 2; }
@@ -78,11 +79,13 @@
   main#index section.main-content h2 { font-size: 32px; }
   main#index section.main-content a#schedule-button { font-size: 18px; }
   /* Apply.html & Contact.html */
-  main#apply section, main#contact section { padding: 25px; }
-  main#apply section h1, main#contact section h1 { font-size: 34px; line-height: 40px; }
-  main#apply section form, main#contact section form { width: 100%; margin-top: 25px; }
-  main#apply section form input, main#contact section form input { width: 100%; }
-  main#apply section form select, main#contact section form select { width: 100%; }
+  main#apply section, main#contact section.contact-section1 .contact-wrapper { padding: 25px; padding-top: 50px; }
+  main#contact section.contact-section2 { padding: 25px; padding-top: 50px; }
+  main#apply section h1, main#contact section.contact-section1 .contact-wrapper h1 { font-size: 34px; line-height: 40px; }
+  main#apply section form, main#contact section.contact-section1 .contact-wrapper form { width: 100%; margin-top: 25px; }
+  main#apply section form input, main#contact section.contact-section1 .contact-wrapper form input { width: 100%; }
+  main#apply section form select, main#contact section.contact-section1 .contact-wrapper form select { width: 100%; }
+  main#contact section.contact-section2 section { width: 100%; }
   /* Footer */
   footer { grid-column: col-start / span col-end; grid-row: footer / span row-end; flex-wrap: wrap; }
   footer section { order: 2; }

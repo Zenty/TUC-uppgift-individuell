@@ -53,22 +53,42 @@
   </header>
   <!-- Main Content --> 
   <main id="contact">
-    <section>
-      <h1>Apply To a Course!</h1>
-      <form action="/apply.html" id="apply_form" method="GET">
-        <label for="email_sender_fname"> Your name:</label>
-        <div id="name_container">
-          <input type="text" id="email_sender_fname" name="email_sender_fname" placeholder="Pontus" required>
-          <input type="text" id="email_sender_lname" name="email_sender_lname" placeholder="Flodström" required>
-        </div>
-        <label for="email_from"> Your email:</label>
-        <input type="email" id="email_from" name="email_from" placeholder="myName@email.com" required>
-        <label for="email_title"> Title:</label>
-        <input type="text" id="email_title" name="email_title" placeholder="Email Title" required>
-        <label for="email_content"> Extra comments:</label>
-        <textarea id="email_content" name="email_content" rows="10" placeholder="Email Content.."></textarea>
-        <input type="submit" id="application_submit" value="SEND APPLICATION">
-      </form>
+    <!-- Contact Form --> 
+    <section class="contact-section1">
+      <div class="contact-wrapper">
+        <h1>Contact Us</h1>
+        <form action="/contact.html" id="contact_form" method="GET">
+          <label for="email_sender_fname"> Your name:</label>
+          <div id="name_container">
+            <input type="text" id="email_sender_fname" name="fname" placeholder="Pontus" required>
+            <input type="text" id="email_sender_lname" name="lname" placeholder="Flodström" required>
+          </div>
+          <label for="email_from"> Your email:</label>
+          <input type="email" id="email_from" name="email_from" placeholder="myName@email.com" required>
+          <label for="email_title"> Title:</label>
+          <input type="text" id="email_title" name="title" value="Hello, from the website." disabled required>
+          <input type="hidden" name="email_title" value="Hello, from the website.">
+          <label for="email_content"> Message:</label>
+          <textarea id="email_content" name="email_content" rows="10" placeholder="Content.." required></textarea>
+          <input type="submit" id="email_submit" value="SEND EMAIL">
+        </form>
+      </div>
+    </section>
+    <!-- Contact Information --> 
+    <section class="contact-section2">
+      <h2>Contact Information</h2>
+      <section class="contact-info">
+        <h3>Address</h3>
+        <address>
+          <p>Norra Svedengatan 13<br>582 73 Linköping</p><br>
+          <p>Email: <a href="mailto:contact@FrontEndCourses.se">contact@FrontEndCourses.se</a></p>
+          <p>Phone: <a href="tel:+46707007070">+46 70 7007 070</a></p>
+        </address>
+      </section>
+      <section class="contact-maps">
+        <h3>Visit Us</h3>
+        <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14049.145684383178!2d15.603310914248729!3d58.436926612845575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sse!4v1729068814823!5m2!1sen!2sse" style="border: 1px solid var(--primary-color);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
     </section>
   </main>
   <!-- Footer --> 

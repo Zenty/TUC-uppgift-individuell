@@ -116,7 +116,7 @@ main#index section.banner {
 }
 
 main#index section.banner .banner-wrapper {
-  background: linear-gradient(125deg, var(--bg-footer-color) 0%, rgba(31, 207, 230, 0.606) 38%);;
+  background: linear-gradient(125deg, var(--bg-footer-color) 0%, rgba(31, 207, 230, 0.606) 38%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -162,15 +162,29 @@ main#index section.main-content section.js_courses a { background-image: url("/i
 main#index section.main-content section.js_courses div { background-color: rgba(var(--primary-js-color), 0.5); border-radius: 15px; border-top-left-radius: 0px; }
 main#index section.main-content section.js_courses a:hover { box-shadow: 0px 0px 15px 5px rgba(var(--primary-js-color), 1); }
 
-/* Apply.html & Contact.html */
-main#apply section, main#contact section {
+/* Apply.html & Contact.html Section1 */
+main#apply section, main#contact section.contact-section1 .contact-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main#apply section form, main#contact section form {
+main#contact section.contact-section1 {
+  background: url("../images/contact-banner.avif");
+  background-size: cover;
+  box-shadow: 0px 0px 20px var(--bg-nav-color);
+  padding: 0;
+}
+
+main#contact section.contact-section1 .contact-wrapper {
+  background: linear-gradient(125deg, var(--bg-footer-color) 0%, rgba(31, 207, 230, 0.606) 48%);
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+main#apply section form, main#contact section.contact-section1 .contact-wrapper form {
   display: flex;
   width: 500px;
   flex-direction: column;
@@ -178,7 +192,7 @@ main#apply section form, main#contact section form {
   margin-top: 50px;
 }
 
-main#apply section form input, main#contact section form input {
+main#apply section form input, main#contact section.contact-section1 .contact-wrapper form input {
   width: 48%;
   margin-bottom: 20px;
   padding: 10px 15px;
@@ -186,12 +200,12 @@ main#apply section form input, main#contact section form input {
   border-radius: 2px;
 }
 
-main#apply section form input:focus-visible, main#contact section form input:focus-visible {
+main#apply section form input:focus-visible, main#contact section.contact-section1 .contact-wrapper form input:focus-visible {
   outline-color: var(--primary-color);
 }
 
 
-main#apply section form select, main#contact section form select {
+main#apply section form select, main#contact section.contact-section1 .contact-wrapper form select {
   width: 48%;
   margin-bottom: 20px;
   padding: 10px 15px;
@@ -199,11 +213,11 @@ main#apply section form select, main#contact section form select {
   border-radius: 2px;
 }
 
-main#apply section form select:focus-visible, main#contact section form select:focus-visible {
+main#apply section form select:focus-visible, main#contact section.contact-section1 .contact-wrapper form select:focus-visible {
   outline-color: var(--primary-color);
 }
 
-main#apply section form textarea, main#contact section form textarea {
+main#apply section form textarea, main#contact section.contact-section1 .contact-wrapper form textarea {
   width: 100%;
   margin-bottom: 20px;
   padding: 10px 15px;
@@ -212,11 +226,11 @@ main#apply section form textarea, main#contact section form textarea {
   border-radius: 2px;
 }
 
-main#apply section form textarea:focus-visible, main#contact section form textarea:focus-visible {
+main#apply section form textarea:focus-visible, main#contact section.contact-section1 .contact-wrapper form textarea:focus-visible {
   outline-color: var(--primary-color);
 }
 
-main#apply section form [type|="submit"], main#contact section form [type|="submit"] {
+main#apply section form [type|="submit"], main#contact section.contact-section1 .contact-wrapper form [type|="submit"] {
   background-color: var(--primary-color);
   width: 100%;
   cursor: pointer;
@@ -224,13 +238,13 @@ main#apply section form [type|="submit"], main#contact section form [type|="subm
   font-weight: bold;
 }
 
-main#apply section form [type|="submit"]:hover, main#contact section form [type|="submit"]:hover {
+main#apply section form [type|="submit"]:hover, main#contact section.contact-section1 .contact-wrapper form [type|="submit"]:hover {
   background-color: white;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
-main#contact section form #name_container {
+main#contact section.contact-section1 .contact-wrapper form #name_container {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -238,8 +252,27 @@ main#contact section form #name_container {
   flex-wrap: wrap;
 }
 
-main#contact section form #name_container input {
+main#contact section.contact-section1 .contact-wrapper form #name_container input {
   width: 48%;
+}
+
+/* Contact.html Section 2 */
+main#contact section.contact-section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+main#contact section.contact-section2 section {
+ width: 48%;
+ margin-top: 50px;
+}
+
+main#contact section.contact-section2 section #maps {
+  width: 100%;
+  height: 400px;
 }
 
 /* ************ */

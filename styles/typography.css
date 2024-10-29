@@ -16,11 +16,11 @@ header nav ul.menu li a.active i#submenu-arrow { color: var(--primary-color); }
 /* Main */
 /* Index.html */
 main#index section.banner h1 { font-size: 60px; color: var(--main-main-heading-color); line-height: 65px; word-break: break-word; }
-main#index section.banner h2 { font-size: 32px; color: var(--main-main-heading-color); padding-top: 15px;}
+main#index section.banner h2 { font-size: 32px; color: var(--main-main-heading-color); padding-top: 15px; }
 main#index section.banner #banner-button { background-color: var(--primary-color); display: inline-block; font-size: 22px; margin-top: 35px; padding: 20px 40px; color: white; text-decoration: none; box-shadow: 0px 0px 10px rgba(0,0,0,0.2) }
 main#index section.banner #banner-button:hover { background-color: rgba(255,255,255, 0.85); box-shadow: 0px 0px 15px 2px white; color: var(--primary-color); }
 
-main#index section.main-content h2 { font-size: 32px; text-align: center;}
+main#index section.main-content h2 { font-size: 32px; text-align: center; }
 main#index section.main-content a#schedule-button { display: block; font-size: 22px; text-align: center; padding-bottom: 30px; color: var(--primary-color); text-decoration: none; }
 main#index section.main-content a#schedule-button:hover { text-decoration: underline; }
 
@@ -31,7 +31,7 @@ main#index section.main-content section h3#js-header { color: rgb(var(--primary-
 
 main#index section.main-content section a { color: white; text-decoration: none; }
 main#index section.main-content section a h4 { font-size: 36px; word-break: break-word; }
-main#index section.main-content section a span { font-size: 16px; text-align: right; padding-right: 15px; padding-top: 15px;}
+main#index section.main-content section a span { font-size: 16px; text-align: right; padding-right: 15px; padding-top: 15px; }
 main#index section.main-content section a:hover span { font-size: 16px; text-align: right; padding-right: 15px; text-decoration: underline; }
 
 /* Apply.html */
@@ -39,8 +39,15 @@ main#apply section h1 { font-size: 60px; color: var(--primary-color); line-heigh
 main#apply section form label { font-size: 14px; margin-bottom: 5px; }
 
 /* Contact.html */
-main#contact section h1 { font-size: 60px; color: var(--primary-color); line-height: 65px; word-break: break-word; }
-main#contact section form label { font-size: 14px; margin-bottom: 5px; }
+main#contact section.contact-section1 h1 { font-size: 60px; color: var(--text-color-on-dark); line-height: 65px; word-break: break-word; }
+main#contact section.contact-section1 form label { font-size: 14px; margin-bottom: 5px; color: var(--text-color-on-dark); }
+main#contact section.contact-section1 form input:disabled { color: white; }
+main#contact section.contact-section1 form input[type|="submit"]:hover { box-shadow: 0px 0px 15px 2px white; color: var(--primary-color); }
+
+main#contact section.contact-section2 h2 { display: block; width: 100%; font-size: 32px; text-align: center; word-break: break-word; }
+main#contact section.contact-section2 section h3 { font-size: 22px; margin-bottom: 10px; }
+main#contact section.contact-section2 section address a { color: var(--primary-color); text-decoration: none; }
+main#contact section.contact-section2 section address a:hover { text-decoration: underline; }
 
 /* Footer */
 footer section h3 {font-family: 'Open Sans', sans-serif; color: var(--footer-heading-color); font-size: 15px; font-weight: bold; letter-spacing: 1.5px; text-align: left; padding-bottom: 10px; }
