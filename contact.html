@@ -52,8 +52,24 @@
     </nav>
   </header>
   <!-- Main Content --> 
-  <main>
-
+  <main id="contact">
+    <section>
+      <h1>Apply To a Course!</h1>
+      <form action="/apply.html" id="apply_form" method="GET">
+        <label for="email_sender_fname"> Your name:</label>
+        <div id="name_container">
+          <input type="text" id="email_sender_fname" name="email_sender_fname" placeholder="Pontus" required>
+          <input type="text" id="email_sender_lname" name="email_sender_lname" placeholder="Flodström" required>
+        </div>
+        <label for="email_from"> Your email:</label>
+        <input type="email" id="email_from" name="email_from" placeholder="myName@email.com" required>
+        <label for="email_title"> Title:</label>
+        <input type="text" id="email_title" name="email_title" placeholder="Email Title" required>
+        <label for="email_content"> Extra comments:</label>
+        <textarea id="email_content" name="email_content" rows="10" placeholder="Email Content.."></textarea>
+        <input type="submit" id="application_submit" value="SEND APPLICATION">
+      </form>
+    </section>
   </main>
   <!-- Footer --> 
   <footer>
