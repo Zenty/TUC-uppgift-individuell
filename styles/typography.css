@@ -34,6 +34,15 @@ main#index section.main-content section a h4 { font-size: 36px; word-break: brea
 main#index section.main-content section a span { font-size: 16px; text-align: right; padding-right: 15px; padding-top: 15px; }
 main#index section.main-content section a:hover span { font-size: 16px; text-align: right; padding-right: 15px; text-decoration: underline; }
 
+/* Courses.html */
+main#courses h1 { font-size: 60px; color: var(--primary-color); line-height: 65px; word-break: break-word; padding: 50px 20px; margin: 0 auto; text-align: center; }
+main#courses section.courses-html h2 { color: rgb(var(--primary-html-color)) }
+main#courses section.courses-css h2 { color: rgb(var(--primary-css-color)); }
+main#courses section.courses-js h2 { color: rgb(var(--primary-js-color)) }
+main#courses section h2 { word-break: break-word; }
+main#courses section table a { color: white; text-decoration: none; }
+main#courses section table a:hover { text-decoration: underline; }
+
 /* Apply.html */
 main#apply section h1 { font-size: 60px; color: var(--primary-color); line-height: 65px; word-break: break-word; }
 main#apply section form label { font-size: 14px; margin-bottom: 5px; }

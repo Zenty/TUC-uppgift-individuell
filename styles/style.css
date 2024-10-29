@@ -162,6 +162,107 @@ main#index section.main-content section.js_courses a { background-image: url("/i
 main#index section.main-content section.js_courses div { background-color: rgba(var(--primary-js-color), 0.5); border-radius: 15px; border-top-left-radius: 0px; }
 main#index section.main-content section.js_courses a:hover { box-shadow: 0px 0px 15px 5px rgba(var(--primary-js-color), 1); }
 
+/* Courses.html */
+main#courses section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+main#courses section table {
+  overflow: auto;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+main#courses section .table-wrapper {
+  width: 100%;
+}
+
+main#courses section .large-screen-view {
+  display: block;
+}
+
+main#courses section .small-screen-view {
+  display: none;
+}
+
+main#courses section table:first-of-type {
+  margin-top: 20px;
+}
+
+main#courses section table:last-child > tbody {
+  padding-top: 40px;
+}
+
+main#courses section table.html-course-schedule { outline: 1px solid rgba(var(--primary-html-color), 1); }
+main#courses section table.css-course-schedule { outline: 1px solid rgba(var(--primary-css-color), 1); }
+main#courses section table.js-course-schedule { outline: 1px solid rgba(var(--primary-js-color), 1); }
+
+main#courses section table th {
+  color: white;
+  border: 2px solid white;
+  padding: 20px 20px;
+}
+
+main#courses section table.html-course-schedule th { background-color: rgba(var(--primary-html-color), 1); border: 1px solid white; }
+main#courses section table.css-course-schedule th { background-color: rgba(var(--primary-css-color), 1); border: 1px solid white; }
+main#courses section table.js-course-schedule th { background-color: rgba(var(--primary-js-color), 1); border: 1px solid white; }
+
+main#courses section table td {
+  background-color: white;
+  border: 2px solid white;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+main#courses section table tbody.full td {
+  background-color: rgb(255, 217, 217);
+  color: rgb(191, 37, 37);
+}
+
+main#courses section table tr.full td {
+  background-color: rgb(255, 217, 217);
+  color: rgb(191, 37, 37);
+}
+
+main#courses section table.html-course-schedule tr td:first-child { background-color: rgb(227, 183, 117);  border: 1px solid white; }
+main#courses section table.css-course-schedule tr td:first-child { background-color: rgb(115, 194, 127); border: 1px solid white; }
+main#courses section table.js-course-schedule tr td:first-child { background-color: rgb(107, 153, 188); border: 1px solid white; }
+
+main#courses section table.html-course-schedule tbody tr:first-of-type td:first-of-type { background-color: rgb(227, 183, 117);  border: 1px solid white; }
+main#courses section table.css-course-schedule tbody tr:first-of-type td:first-of-type { background-color: rgb(115, 194, 127); border: 1px solid white; }
+main#courses section table.js-course-schedule tbody tr:first-of-type td:first-of-type { background-color: rgb(107, 153, 188); border: 1px solid white; }
+
+main#courses section table.html-course-schedule td { color: rgba(var(--primary-html-color), 1); border: 1px solid rgba(var(--primary-html-color), 1); }
+main#courses section table.css-course-schedule td { color: rgba(var(--primary-css-color), 1); border: 1px solid rgba(var(--primary-css-color), 1); }
+main#courses section table.js-course-schedule td { color: rgba(var(--primary-js-color), 1); border: 1px solid rgba(var(--primary-js-color), 1); }
+
+main#courses section.courses-html {
+  background-image: radial-gradient(rgba(var(--secondary-html-color), 0.2) 2px, transparent 2px), radial-gradient(rgba(var(--secondary-html-color), 0.1) 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  background-color: rgba(var(--primary-html-color), 0.2);
+}
+
+main#courses section.courses-css {
+  background-image: radial-gradient(rgba(var(--secondary-css-color), 0.2) 2px, transparent 2px), radial-gradient(rgba(var(--secondary-css-color), 0.1) 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  background-color: rgba(var(--primary-css-color), 0.2);
+}
+
+main#courses section.courses-js {
+  background-image: radial-gradient(rgba(var(--secondary-js-color), 0.2) 2px, transparent 2px), radial-gradient(rgba(var(--secondary-js-color), 0.1) 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  background-color: rgba(var(--primary-js-color), 0.2);
+}
+
+
 /* Apply.html & Contact.html Section1 */
 main#apply section, main#contact section.contact-section1 .contact-wrapper {
   width: 100%;
