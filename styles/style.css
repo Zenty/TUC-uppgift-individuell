@@ -75,6 +75,7 @@ header nav ul.menu ul.sub-menu {
   display: none;
 }
 
+
 /* ********** */
 /*    Main    */
 /* ********** */
@@ -150,6 +151,7 @@ main#index section.main-content section .course_item div {
   justify-content: space-between;
 }
 
+/* Index.html Course Items */
 main#index section.main-content section.html_courses a { background-image: url("/images/frontend-course-image.jpeg"); background-size: cover; background-position-y: -30px; border: 2px solid rgba(var(--primary-html-color), 1); border-radius: 15px; border-top-left-radius: 0px; }
 main#index section.main-content section.html_courses div { background-color: rgba(var(--primary-html-color), 0.5); border-radius: 15px; border-top-left-radius: 0px; }
 main#index section.main-content section.html_courses a:hover { box-shadow: 0px 0px 15px 5px rgba(var(--primary-html-color), 1); }
@@ -350,7 +352,7 @@ main#course-page.course-page-js section.course-section2 {
   background-color: rgba(var(--primary-js-color), 0.2);
 }
 
-/* Apply.html & Contact.html Section1 */
+/* Apply.html & Contact.html Section1 (Form Styling) */
 main#apply section, main#contact section.contact-section1 .contact-wrapper {
   width: 100%;
   display: flex;
@@ -463,6 +465,7 @@ main#contact section.contact-section2 section #maps {
   height: 400px;
 }
 
+
 /* ************ */
 /*    Footer    */
 /* ************ */
@@ -492,16 +495,17 @@ footer aside {
   max-width: 300px;
 }
 
+
 /* **************** */
 /*    Animations    */
 /* **************** */
 
-@keyframes toright {
+@keyframes toright { /* Used to toggle nav for medium sized screens */
   from { left: 30px; }
   to { left: 300px; }
 }
 
-@keyframes toleft {
+@keyframes toleft { /* Used to toggle nav for medium sized screens */
   from { left: 300px; }
   to { left: 30px; }
 }
