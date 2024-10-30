@@ -22,7 +22,7 @@
 }
 
 /* Medium Sized Devices */
-@media (max-width: 1200px) and (min-width: 600px) {
+@media (max-width: 1200px) and (min-width: 601px) {
   body { grid-template-rows: [row-start] auto [footer] auto [row-end] !important; }
   /* Header */
   header nav { display: block !important; }
@@ -36,7 +36,7 @@
   #hamburger, #hamburgerexit { display: none !important; }
   /* Main */
   /* Index.html */
-  main#index section.banner { background-position-x: -300px;}
+  main#index section.banner { background-position-x: -300px; }
   main#index section.banner h1 { font-size: 50px; line-height: 54px; }
   main#index section.banner h2 { font-size: 26px; }
   main#index section.main-content h2 { font-size: 32px; }
@@ -45,6 +45,14 @@
   main#courses h1 { font-size: 46px; line-height: 50px; }
   main#courses section .large-screen-view { display: none; }
   main#courses section .small-screen-view { display: block; }
+  /* Course-page.html */
+  main#course-page section.course-banner h1 { font-size: 46px; line-height: 50px; }
+  main#course-page section.course-section1 { flex-direction: column; }
+  main#course-page section.course-section1 h2 { font-size: 32px; }
+  main#course-page section.course-section1 section { order: 2; width: 100%; }
+  main#course-page section.course-section1 aside { order: 1; width: 100%; margin-bottom: 50px; }
+  main#course-page section.course-section1 aside blockquote { font-size: 28px; }
+  main#course-page section.course-section1 aside blockquote span { font-size: 24px; padding-top: 5px; }
   /* Apply.html & Contact.html */
   main#apply section h1, main#contact section.contact-section1 .contact-wrapper h1 { font-size: 46px; line-height: 50px; }
   main#apply section form, main#contact section.contact-section1 .contact-wrapper form { width: 100%; max-width: 500px; }
@@ -76,8 +84,8 @@
   /* Index.html */
   main { grid-column: col-start / span col-end; grid-row: main / span footer; }
   main#index section section { margin-top: 25px; }
-  main#index section.banner { background-position-x: -500px;}
-  main#index section.banner h1 { font-size: 36px; line-height: 40px;}
+  main#index section.banner { background-position-x: -500px; }
+  main#index section.banner h1 { font-size: 36px; line-height: 40px; }
   main#index section.banner h2 { font-size: 22px; }
   main#index section.banner .banner-wrapper { padding: 25px; }
   main#index section.main-content h2 { font-size: 32px; }
@@ -87,6 +95,15 @@
   main#courses section { padding: 25px; }
   main#courses section .large-screen-view { display: none; }
   main#courses section .small-screen-view { display: block; }
+  /* Course-page.html */
+  main#course-page section.course-banner  { min-height: 150px; }
+  main#course-page section.course-banner .banner-wrapper, main#course-page section.course-section1, main#course-page section.course-section2 { padding: 25px; }
+  main#course-page section.course-banner h1 { font-size: 34px; line-height: 40px; }
+  main#course-page section.course-section1 h2 { font-size: 32px; padding-top: 25px; }
+  main#course-page section.course-section1 section { order: 2; width: 100%; }
+  main#course-page section.course-section1 aside { order: 1; width: 100%; margin-bottom: 50px; }
+  main#course-page section.course-section1 aside blockquote { font-size: 28px; }
+  main#course-page section.course-section1 aside blockquote span { font-size: 24px; padding-top: 5px; }
   /* Apply.html & Contact.html */
   main#apply section, main#contact section.contact-section1 .contact-wrapper { padding: 25px; padding-top: 50px; }
   main#contact section.contact-section2 { padding: 25px; padding-top: 50px; }

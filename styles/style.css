@@ -262,6 +262,93 @@ main#courses section.courses-js {
   background-color: rgba(var(--primary-js-color), 0.2);
 }
 
+/* Course-page.html */
+main#course-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main#course-page section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main#course-page section.course-banner {
+  background-image: url("/images/frontend-course-image.jpeg"); 
+  background-size: cover;
+  min-height: 200px;
+  align-content: flex-end;
+  justify-content: flex-start;
+  padding: 0;
+  box-shadow: 0px 0px 20px var(--bg-nav-color);
+}
+
+main#course-page section.course-banner .banner-wrapper {
+  background: linear-gradient(125deg, var(--bg-footer-color) 0%, rgba(0, 0, 0, 0.606) 38%);
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+main#course-page.course-page-html section.course-banner .banner-wrapper {
+  background: linear-gradient(125deg, var(--bg-footer-color) 0%, rgba(var(--primary-html-color), 0.606) 38%);
+}
+
+main#course-page.course-page-css section.course-banner .banner-wrapper {
+  background: linear-gradient(125deg, var(--bg-footer-color) 0%, rgba(var(--primary-css-color), 0.606) 38%);
+}
+
+main#course-page.course-page-js section.course-banner .banner-wrapper {
+  background: linear-gradient(125deg, var(--bg-footer-color) 0%, rgba(var(--primary-js-color), 0.606) 38%);
+}
+
+main#course-page section.course-section1 {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+main#course-page section.course-section1 section {
+  width: 48%;
+}
+
+main#course-page section.course-section1 aside {
+  width: 48%;
+}
+
+main#course-page section.course-section2 {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.2) 2px, transparent 2px), radial-gradient(rgba(0, 0, 0, 0.1) 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+main#course-page.course-page-html section.course-section2 {
+  background-image: radial-gradient(rgba(var(--secondary-html-color), 0.2) 2px, transparent 2px), radial-gradient(rgba(var(--secondary-html-color), 0.1) 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  background-color: rgba(var(--primary-html-color), 0.2);
+}
+
+main#course-page.course-page-css section.course-section2 {
+  background-image: radial-gradient(rgba(var(--secondary-css-color), 0.2) 2px, transparent 2px), radial-gradient(rgba(var(--secondary-css-color), 0.1) 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  background-color: rgba(var(--primary-css-color), 0.2);
+}
+
+main#course-page.course-page-js section.course-section2 {
+  background-image: radial-gradient(rgba(var(--secondary-js-color), 0.2) 2px, transparent 2px), radial-gradient(rgba(var(--secondary-js-color), 0.1) 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  background-color: rgba(var(--primary-js-color), 0.2);
+}
 
 /* Apply.html & Contact.html Section1 */
 main#apply section, main#contact section.contact-section1 .contact-wrapper {

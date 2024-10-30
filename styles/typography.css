@@ -7,6 +7,7 @@ body { color: var(--text-color-on-light); font-family: 'Open Sans', sans-serif; 
 header nav #hamburger { text-align: center; }
 header nav ul.menu li a { color: var(--menu-link-color); text-decoration: none; display: block; font-size: 18px; padding: 10px; }
 header nav ul.menu li a.active { color: var(--primary-color); }
+header nav ul.menu li ul li a.active { color: var(--primary-color); }
 header nav ul.menu li a:hover { text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); }
 header nav ul.menu ul.sub-menu li a { color: var(--menu-sub-link-color); font-size: 16px; padding: 5px; }
 header nav ul.menu ul.sub-menu li a:hover { color: var(--menu-sub-link-hover-color); text-decoration: underline; text-shadow: none; }
@@ -17,7 +18,7 @@ header nav ul.menu li a.active i#submenu-arrow { color: var(--primary-color); }
 /* Index.html */
 main#index section.banner h1 { font-size: 60px; color: var(--main-main-heading-color); line-height: 65px; word-break: break-word; }
 main#index section.banner h2 { font-size: 32px; color: var(--main-main-heading-color); padding-top: 15px; }
-main#index section.banner #banner-button { background-color: var(--primary-color); display: inline-block; font-size: 22px; margin-top: 35px; padding: 20px 40px; color: white; text-decoration: none; box-shadow: 0px 0px 10px rgba(0,0,0,0.2) }
+main#index section.banner #banner-button { background-color: var(--primary-color); display: inline-block; font-size: 22px; margin-top: 35px; padding: 20px 40px; color: white; text-decoration: none; box-shadow: 0px 0px 10px rgba(0,0,0,0.2); }
 main#index section.banner #banner-button:hover { background-color: rgba(255,255,255, 0.85); box-shadow: 0px 0px 15px 2px white; color: var(--primary-color); }
 
 main#index section.main-content h2 { font-size: 32px; text-align: center; }
@@ -42,6 +43,30 @@ main#courses section.courses-js h2 { color: rgb(var(--primary-js-color)) }
 main#courses section h2 { word-break: break-word; }
 main#courses section table a { color: white; text-decoration: none; }
 main#courses section table a:hover { text-decoration: underline; }
+
+/* Course-page.html */
+main#course-page section.course-banner h1 { font-size: 60px; color: var(--text-color-on-dark); line-height: 65px; word-break: break-word; }
+main#course-page section p { padding-top: 10px; }
+main#course-page section.course-section1 h2 { font-size: 32px; width: 100%; text-align: center; padding-bottom: 25px; }
+main#course-page section.course-section1 aside blockquote { font-size: 32px; color: rgb(66, 66, 66); }
+main#course-page section.course-section1 aside blockquote span { width: 100%; display: block; font-size: 28px; text-align: right; }
+main#course-page section.course-section1 aside blockquote .quotation { padding: 10px 15px; color: rgb(66, 66, 66); font-size: 60px; }
+main#course-page section.course-section2 p { color: rgb(67, 67, 67); }
+main#course-page section.course-section2 #apply-button { background-color: var(--primary-color); margin: 0 auto; display: inline-block; font-size: 22px; margin-top: 35px; padding: 20px 40px; color: white; text-decoration: none; text-align: center; box-shadow: 0px 0px 10px rgba(0,0,0,0.2) }
+main#course-page section.course-section2 #apply-button:hover { background-color: rgba(255,255,255, 0.85); box-shadow: 0px 0px 15px 2px white; color: var(--primary-color); }
+
+main#course-page.course-page-html section h3 { color: rgb(var(--primary-html-color)); }
+main#course-page.course-page-html section aside blockquote .quotation { color: rgb(var(--primary-html-color)); }
+main#course-page.course-page-html section.course-section2 #apply-button { background-color: rgb(var(--primary-html-color)); }
+main#course-page.course-page-html section.course-section2 #apply-button:hover { background-color: rgba(var(--primary-html-color), 0.8); color: white; }
+main#course-page.course-page-css section h3 { color: rgb(var(--primary-css-color)); }
+main#course-page.course-page-css section aside blockquote .quotation { color: rgb(var(--primary-css-color)); }
+main#course-page.course-page-css section.course-section2 #apply-button { background-color: rgb(var(--primary-css-color)); }
+main#course-page.course-page-css section.course-section2 #apply-button:hover { background-color: rgba(var(--primary-css-color), 0.8); color: white; }
+main#course-page.course-page-js section h3 { color: rgb(var(--primary-js-color)); }
+main#course-page.course-page-js section aside blockquote .quotation { color: rgb(var(--primary-js-color)); }
+main#course-page.course-page-js section.course-section2 #apply-button { background-color: rgb(var(--primary-js-color)); }
+main#course-page.course-page-js section.course-section2 #apply-button:hover { background-color: rgba(var(--primary-js-color), 0.8); color: white; }
 
 /* Apply.html */
 main#apply section h1 { font-size: 60px; color: var(--primary-color); line-height: 65px; word-break: break-word; }
