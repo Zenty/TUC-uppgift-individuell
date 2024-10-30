@@ -21,6 +21,15 @@ i.fas, i.far, i.fal {
   font-size: 30px;
 }
 
+figure {
+  max-width: 75%;
+  margin: auto;
+}
+
+figure img {
+  width: 100%;
+}
+
 
 /* ************ */
 /*    Header    */
